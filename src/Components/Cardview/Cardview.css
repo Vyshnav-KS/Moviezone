@@ -1,0 +1,60 @@
+.main_card {
+    display: flex;
+    flex-direction: column;
+	width: 280px;
+	height: 545px;
+    border-radius: 15px;
+    background-color: #323337;
+    margin: 14px;
+    color: #CBC1C1;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    /*align-items: center;*/
+
+}
+
+.poster_image{
+    margin: 7px;
+    width: 266px;
+    height: 360px;
+    border-radius: 15px;
+}
+
+.title{
+    margin: 7px;
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 23px;
+    color: white;
+}
+.date_rate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 7px;
+}
+
+.rating_box{
+    border: 1px solid #999090;
+    text-align: center;
+    border-radius: 10px;
+    height: 31px;
+    width: 62px;
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+}
+.rating{
+    font-size: 24px;
+    font-weight: 300;
+}
+.date{
+    font-size: 24px;
+    font-weight: 300;
+}
+.media_type{
+    text-align: center;
+    padding-left: 7px;
+}
+.star{
+}

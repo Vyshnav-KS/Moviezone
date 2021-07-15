@@ -1,0 +1,60 @@
+[debug] [2021-07-15T13:24:08.087Z] ----------------------------------------------------------------------
+[debug] [2021-07-15T13:24:08.090Z] Command:       /usr/bin/node /usr/local/bin/firebase init
+[debug] [2021-07-15T13:24:08.090Z] CLI Version:   9.16.0
+[debug] [2021-07-15T13:24:08.090Z] Platform:      linux
+[debug] [2021-07-15T13:24:08.090Z] Node Version:  v12.21.0
+[debug] [2021-07-15T13:24:08.090Z] Time:          Thu Jul 15 2021 18:54:08 GMT+0530 (India Standard Time)
+[debug] [2021-07-15T13:24:08.091Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-15T13:24:08.095Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-15T13:24:08.096Z] > authorizing via signed-in user (vyshnavks85@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/vyshnav/projects/react/moviezone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-07-15T13:25:06.289Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-07-15T13:25:07.227Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-07-15T13:25:07.228Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project moviezone-dd7fd (Moviezone) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-07-15T13:25:51.045Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-07-15T13:25:51.402Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-07-15T13:25:51.403Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.7.1","browserURL":"https://www.gstatic.com/firebasejs/8.7.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.7.1/firebase.tgz"},"live":{"version":"8.7","browserURL":"https://www.gstatic.com/firebasejs/live/8.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/8.7.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.7.1/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.7.1/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.7.1/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.7.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.7.1/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Detected a .git folder at /home/vyshnav/projects/react/moviezone 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=398906440&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-07-15T13:26:27.898Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"a3a260c6052f75736239","redirect_uri":"http://localhost:9005","state":"398906440"}
+[debug] [2021-07-15T13:26:28.484Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Thu, 15 Jul 2021 13:26:28 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"90b19a4d4842c02196bbd23f88b61b88\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com render-temp.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"BD66:3747:15AE17:171082:60F03784"}
+[debug] [2021-07-15T13:26:28.489Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-07-15T13:26:29.216Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-07-15T13:26:29.216Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Vyshnav-KS","id":62277580,"node_id":"MDQ6VXNlcjYyMjc3NTgw","avatar_url":"https://avatars.githubusercontent.com/u/62277580?v=4","gravatar_id":"","url":"https://api.github.com/users/Vyshnav-KS","html_url":"https://github.com/Vyshnav-KS","followers_url":"https://api.github.com/users/Vyshnav-KS/followers","following_url":"https://api.github.com/users/Vyshnav-KS/following{/other_user}","gists_url":"https://api.github.com/users/Vyshnav-KS/gists{/gist_id}","starred_url":"https://api.github.com/users/Vyshnav-KS/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Vyshnav-KS/subscriptions","organizations_url":"https://api.github.com/users/Vyshnav-KS/orgs","repos_url":"https://api.github.com/users/Vyshnav-KS/repos","events_url":"https://api.github.com/users/Vyshnav-KS/events{/privacy}","received_events_url":"https://api.github.com/users/Vyshnav-KS/received_events","type":"User","site_admin":false,"name":"Vyshnav K S","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":"Engineering student.\r\nCSE CUSAT.\r\n","twitter_username":null,"public_repos":21,"public_gists":0,"followers":12,"following":16,"created_at":"2020-03-17T06:10:29Z","updated_at":"2021-07-15T13:26:27Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":61402,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"pro","space":976562499,"collaborators":0,"private_repos":9999}}
+[info] 
+[info] ✔  Success! Logged into GitHub as Vyshnav-KS 
+[info] 
