@@ -39,7 +39,8 @@ const Trending = () => {
                     />)
                 }
             </div>
-			<PageNavigation setPage={setPage}/>
+			<PageNavigation setPage={setPage}
+			/>
 		</div>
 	);
 };

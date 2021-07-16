@@ -65,7 +65,7 @@ const Header = () => {
 	const classes = useStyles();
 	return (
 		<div className="header">
-			<div>
+			<div className="header_title">
 				<span className="movie">Movie</span>
 				<zone className="zone">zone</zone>
 			</div>
